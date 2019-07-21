@@ -1,4 +1,4 @@
-# Died
+# GameStarted
 
 게임을 시작했음을 공지합니다.
 
