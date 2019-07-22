@@ -1,11 +1,11 @@
-# PlayerLeft
+# UserJoined
 
-사용자가 퇴장하였음을 공지합니다.
+사용자가 접속하였음을 공지합니다.
 
 ```typescript
 interface InformPacket {
   ok: true;
-  kind: "player-left";
+  kind: "user-joined";
   body: {
     user: UserId;
   };
