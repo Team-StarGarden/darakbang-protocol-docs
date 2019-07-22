@@ -2,7 +2,7 @@
 
 - [프로토콜 설명에 앞서](0-foreword/00-index.md)
   - [용어](0-foreword/01-terms.md)
-  - [이름 규칙](0-foreword/02-naming-rule.md)
+  - [패킷 이름 규칙](0-foreword/02-packet-naming-rule.md)
   - [패킷 구조](0-foreword/03-packet-structure.md)
   - [타입 정의](0-foreword/04-type-definitions.md)
 - [대화형 패킷](1-communicate/00-index.md)

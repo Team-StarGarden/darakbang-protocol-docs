@@ -8,7 +8,6 @@
 type GotoRoom = {
   game: GameType;
   room: RoomId;
-  password: string | undefined;
 };
 type GotoGameLobby = {
   game: GameType;
@@ -28,7 +27,7 @@ interface RequestPacket {
 ## 응답 패킷
 
 ```typescript
-type ErrorKind = "is-room-full" | "password-mismatch" | "banned" | "unknown";
+type ErrorKind = "is-room-full" | "unknown";
 interface OkBody {}
 
 interface ResponsePacket {
