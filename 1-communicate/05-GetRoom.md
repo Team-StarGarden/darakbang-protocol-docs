@@ -23,7 +23,7 @@ interface OkData {
 
 interface ResponsePacket {
   ok: boolean;
-  kind: "start-game";
+  kind: "get-room";
   body: OkData | Error<ErrorKind>;
 }
 ```
