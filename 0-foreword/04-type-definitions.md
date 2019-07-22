@@ -9,13 +9,9 @@ export type RoomId = number;
 export type UserId = string;
 
 // Core Types
-
-// *1
-export { Room } from "darakbang-fe/src/lib/room";
-// *2
-export { User } from "darakbang-fe/src/lib/user";
-// *3
-export { GameType, Game } from "darakbang-be/src/core/game";
+export { Room } from "darakbang-fe/src/lib/room"; // *1
+export { User } from "darakbang-fe/src/lib/user"; // *2
+export { GameType, Game } from "darakbang-be/src/core/game"; // *3
 ```
 
 - [\*1: darakbang-fe/src/lib/room](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-fe/blob/master/src/lib/room.ts)
