@@ -6,9 +6,6 @@
 interface InformPacket {
   ok: true;
   kind: "game-started";
-  body: {
-    sendTo: SendTo;
-    message: Message;
-  };
+  body: {};
 }
 ```
