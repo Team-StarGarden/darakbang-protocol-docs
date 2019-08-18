@@ -19,10 +19,10 @@ test:
 pages:
   stage: deploy
   script:
-    - mdbook build
+    - mdbook build -d public
   artifacts:
     paths:
-      - book
+      - public
     expire_in: 1 week
   only:
     - master
