@@ -26,4 +26,5 @@
     - [대화형 패킷](3-game/0-wordchain/0-communicate/00-index.md)
       - [SubmitWord](3-game/0-wordchain/0-communicate/01-SubmitWord.md)
     - [통보형 패킷](3-game/0-wordchain/1-inform/00-index.md)
-      - [CharacterSupplied](3-game/0-wordchain/1-inform/01-CharacterSupplied.md)
+      - [CharacterChanged](3-game/0-wordchain/1-inform/01-CharacterChanged.md)
+      - [TurnChanged](3-game/0-wordchain/1-inform/02-TurnChanged.md)
