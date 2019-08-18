@@ -1,0 +1,15 @@
+{
+  "highlightjs": {
+    "version": "9.15.9",
+    "languages": [
+      "Bash",
+      "CSS",
+      "HTML, XML",
+      "JSON",
+      "JavaScript",
+      "Markdown",
+      "Rust",
+      "TypeScript"
+    ]
+  }
+}

@@ -7,6 +7,7 @@
 export type GameType = string;
 export type RoomId = number;
 export type UserId = string;
+export type char = string; // TypeScript doesn't support char type, it's just convention.
 
 // Core Types
 export { Room } from "darakbang-fe/src/lib/room"; // *1

@@ -1,0 +1,6 @@
+[book]
+authors = ["RanolP <public.ranolp@gmail.com>"]
+language = "ko"
+multilingual = false
+src = "src"
+title = "다락방 프로토콜"

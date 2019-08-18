@@ -1,33 +1,28 @@
-# requiring the environment of NodeJS 10
-image: node:10
+image: rust:1.37.0-stretch
 
-# add 'node_modules' to cache for speeding up builds
 cache:
   paths:
-    - node_modules/ # Node modules and dependencies
+    - $HOME/.cargo/
 
 before_script:
-  - npm install gitbook-cli -g # install gitbook
-  - gitbook fetch 3.2.3 # fetch final stable version
-  - gitbook install # add any requested plugins in book.json
+  - cargo install mdbook
 
 test:
   stage: test
   script:
-    - gitbook build . public # build to public path
+    - echo No Test Specified || false
   only:
-    - branches # this job will affect every branch except 'master'
+    - branches
   except:
     - master
-    
-# the 'pages' job will deploy and build your site to the 'public' path
+
 pages:
   stage: deploy
   script:
-    - gitbook build . public # build to public path
+    - mdbook build
   artifacts:
     paths:
-      - public
+      - book
     expire_in: 1 week
   only:
-    - master # this job will affect only the 'master' branch
+    - master

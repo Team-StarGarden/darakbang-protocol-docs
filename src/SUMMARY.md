@@ -1,5 +1,6 @@
 # 다락방 프로토콜
 
+- [다락방 프로토콜](README.md)
 - [프로토콜 설명에 앞서](0-foreword/00-index.md)
   - [용어](0-foreword/01-terms.md)
   - [이름 규칙](0-foreword/02-naming-rule.md)
@@ -20,3 +21,9 @@
   - [RoomUpdated](2-inform/06-RoomUpdated.md)
   - [RoomRemoved](2-inform/07-RoomRemoved.md)
   - [UserLeft](2-inform/08-UserLeft.md)
+- [게임 패킷](3-game/00-index.md)
+  - [끝말잇기](3-game/0-wordchain/00-index.md)
+    - [대화형 패킷](3-game/0-wordchain/0-communicate/00-index.md)
+      - [SubmitWord](3-game/0-wordchain/0-communicate/01-SubmitWord.md)
+    - [통보형 패킷](3-game/0-wordchain/1-inform/00-index.md)
+      - [CharacterSupplied](3-game/0-wordchain/1-inform/01-CharacterSupplied.md)
