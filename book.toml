@@ -4,3 +4,6 @@ language = "ko"
 multilingual = false
 src = "src"
 title = "다락방 프로토콜"
+
+[output.html]
+additional-css = ["theme/korean.css"]
