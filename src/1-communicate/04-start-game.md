@@ -1,4 +1,4 @@
-# StartGame
+# start-game
 
 게임을 시작합니다.
 

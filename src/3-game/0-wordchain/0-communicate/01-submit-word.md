@@ -1,4 +1,4 @@
-# SubmitWord
+# submit-word
 
 단어를 제시합니다.
 

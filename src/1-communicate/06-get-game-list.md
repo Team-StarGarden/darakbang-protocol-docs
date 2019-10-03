@@ -1,4 +1,4 @@
-# GetGameList
+# get-game-list
 
 서버가 제공하는 게임 목록을 가져옵니다.
 

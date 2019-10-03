@@ -1,4 +1,4 @@
-# CreateRoom
+# create-room
 
 방을 만듭니다.
 

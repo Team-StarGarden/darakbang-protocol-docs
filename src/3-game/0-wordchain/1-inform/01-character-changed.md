@@ -1,4 +1,4 @@
-# TurnChanged
+# character-changed
 
 끝 문자가 변경되었음을 알립니다.
 

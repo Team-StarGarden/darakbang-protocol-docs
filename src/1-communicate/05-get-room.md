@@ -1,4 +1,4 @@
-# GetRoom
+# get-room
 
 방 정보를 가져옵니다.
 

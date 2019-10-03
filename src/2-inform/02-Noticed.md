@@ -1,4 +1,4 @@
-# Noticed
+# noticed
 
 공지 사항을 전달합니다.
 
