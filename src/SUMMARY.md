@@ -12,7 +12,6 @@
   - [ready](1-communicate/03-ready.md)
   - [start-game](1-communicate/04-start-game.md)
   - [get-room](1-communicate/05-get-room.md)
-  - [get-game-list](1-communicate/06-get-game-list.md)
   - [get-self](1-communicate/07-get-self.md)
   - [get-user](1-communicate/08-get-user.md)
 - [통보형 패킷](2-inform/00-index.md)
