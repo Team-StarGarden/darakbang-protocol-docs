@@ -4,9 +4,7 @@
 
 ```typescript
 // Aliases
-export type GameType = string;
-export type RoomId = number;
-export type UserId = string;
+export { GameCategory, RoomId, UserId } from "darakbang-be/src/packet/common";
 export type char = string; // TypeScript doesn't support char type, it's just convention.
 
 // Core Types
@@ -18,3 +16,4 @@ export { GameType, Game } from "darakbang-be/src/core/game"; // *3
 - [\*1: darakbang-fe/src/lib/room](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-fe/blob/master/src/lib/room.ts)
 - [\*2: darakbang-fe/src/lib/user](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-fe/blob/master/src/lib/user.ts)
 - [\*3: darakbang-be/src/core/game](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-be/blob/master/src/core/game.ts)
+- [\*4: darakbang-be/src/packet/common](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-be/blob/master/src/packet/common.ts)

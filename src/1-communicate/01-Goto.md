@@ -6,11 +6,11 @@
 
 ```typescript
 type GotoRoom = {
-  game: GameType;
+  gameCategory: GameCategory;
   room: RoomId;
 };
 type GotoGameLobby = {
-  game: GameType;
+  gameCategory: GameCategory;
 };
 type GotoMain = {};
 

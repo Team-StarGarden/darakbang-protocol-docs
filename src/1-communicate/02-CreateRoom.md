@@ -8,7 +8,7 @@
 interface RequestPacket {
   kind: "create-room";
   body: {
-    gameType: GameType;
+    gameCategory: GameCategory;
     options: object | undefined;
   };
 }

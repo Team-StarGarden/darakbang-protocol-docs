@@ -8,7 +8,7 @@
 interface RequestPacket {
   kind: "get-game-list";
   body: {
-    type: GameType;
+    gameCategory: GameCategory;
   };
 }
 ```
