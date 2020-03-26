@@ -3,12 +3,23 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - 'master'
+      - master
 
 jobs:
-  test:
-    name: Test
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: mdBook Action
-        uses: peaceiris/actions-mdbook@v1.1.8
+      - uses: actions/checkout@v2
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: 0.3.6
+
+      - run: mdbook build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.MDBOOK_TOKEN }}
+          publish_dir: ./book
