@@ -152,20 +152,38 @@
                         <h1><a class="header" href="#타입-정의" id="타입-정의">타입 정의</a></h1>
 <p>공통으로 자주 나올 타입에 대한 정의입니다.</p>
 <pre><code class="language-typescript">// Aliases
-export { GameCategory, RoomId, UserId } from &quot;darakbang-be/src/packet/common&quot;;
+export { GameCategory } from &quot;darakbang-be/src/packet/common&quot;;
+
+export type RoomId = number;
+export type UserId = string;
 export type char = string; // TypeScript doesn't support char type, it's just convention.
 
 // Core Types
-export { Room } from &quot;darakbang-fe/src/lib/room&quot;; // *1
-export { User } from &quot;darakbang-fe/src/lib/user&quot;; // *2
-export { GameType, Game } from &quot;darakbang-be/src/core/game&quot;; // *3
+export interface Room {
+  id: number;
+  rules: GameRule[];
+  players: {
+    current: number;
+    max: number;
+  };
+  canJoin: boolean;
+}
+export interface User {
+  userId: number;
+  displayName: string;
+  tag: number;
+}
+export enum GameType {
+  OnggiJonggi = '옹기종기',
+  Wakjajiggeol = '왁자지껄',
+}
+
+export interface Game {
+  category: GameCategory;
+  type: GameType;
+}
+
 </code></pre>
-<ul>
-<li><a href="https://gitlab.com/Team-StarGarden/Darakbang/darakbang-fe/blob/master/src/lib/room.ts">*1: darakbang-fe/src/lib/room</a></li>
-<li><a href="https://gitlab.com/Team-StarGarden/Darakbang/darakbang-fe/blob/master/src/lib/user.ts">*2: darakbang-fe/src/lib/user</a></li>
-<li><a href="https://gitlab.com/Team-StarGarden/Darakbang/darakbang-be/blob/master/src/core/game.ts">*3: darakbang-be/src/core/game</a></li>
-<li><a href="https://gitlab.com/Team-StarGarden/Darakbang/darakbang-be/blob/master/src/packet/common.ts">*4: darakbang-be/src/packet/common</a></li>
-</ul>
 
                     </main>
 
