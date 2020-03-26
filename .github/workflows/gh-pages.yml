@@ -1,0 +1,14 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: mdBook Action
+        uses: peaceiris/actions-mdbook@v1.1.8
