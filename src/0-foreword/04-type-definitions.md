@@ -4,16 +4,35 @@
 
 ```typescript
 // Aliases
-export { GameCategory, RoomId, UserId } from "darakbang-be/src/packet/common";
+export { GameCategory } from "darakbang-be/src/packet/common";
+
+export type RoomId = number;
+export type UserId = string;
 export type char = string; // TypeScript doesn't support char type, it's just convention.
 
 // Core Types
-export { Room } from "darakbang-fe/src/lib/room"; // *1
-export { User } from "darakbang-fe/src/lib/user"; // *2
-export { GameType, Game } from "darakbang-be/src/core/game"; // *3
-```
+export interface Room {
+  id: number;
+  rules: GameRule[];
+  players: {
+    current: number;
+    max: number;
+  };
+  canJoin: boolean;
+}
+export interface User {
+  userId: number;
+  displayName: string;
+  tag: number;
+}
+export enum GameType {
+  OnggiJonggi = '옹기종기',
+  Wakjajiggeol = '왁자지껄',
+}
 
-- [\*1: darakbang-fe/src/lib/room](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-fe/blob/master/src/lib/room.ts)
-- [\*2: darakbang-fe/src/lib/user](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-fe/blob/master/src/lib/user.ts)
-- [\*3: darakbang-be/src/core/game](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-be/blob/master/src/core/game.ts)
-- [\*4: darakbang-be/src/packet/common](https://gitlab.com/Team-StarGarden/Darakbang/darakbang-be/blob/master/src/packet/common.ts)
+export interface Game {
+  category: GameCategory;
+  type: GameType;
+}
+
+```
